@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,7 @@
     <title>Technical Document Page</title>
 
     <style type="text/css">
-        #navbar{
+        #navbar {
             position: fixed;
             min-width: 290px;
             top: 0px;
@@ -15,16 +16,17 @@
             width: 300px;
             height: 100%;
             border-right: solid;
-            border-color:black;
-            
+            border-color: black;
+
         }
-        #main-doc 
-        {
-        position: absolute;
-        margin-left: 310px;
-        padding: 20px;
+
+        #main-doc {
+            position: absolute;
+            margin-left: 310px;
+            padding: 20px;
         }
-        #ul{
+
+        #ul {
             list-style: none;
         }
     </style>
@@ -32,6 +34,7 @@
 
     </script>
 </head>
+
 <body>
     <nav id="navbar">
         <header>Technal Document Page</header>
@@ -39,20 +42,24 @@
             <li><a class="nav-link" href="#sec1">Hello World</a></li>
             <li> <a class="nav-link" href="#sec2">Variables</a></li>
             <li> <a class="nav-link" href="#sec3">Data Types</a></li>
+            <li> <a class="nav-link" href="#sec4">Constants</a></li>
+            <li> <a class="nav-link" href="#sec5">if...else_statement</a></li>
         </ul>
-        
-       
+
+
         <a class="nav-link">Codes</a>
         <a class="nav-link">Contact us</a>
     </nav>
-    <div id="main-doc">
-        
+
+    <main id="main-doc">
+
         <section class="main-section" id="sec1">
             <header class="main-section" id="helloworld">
-            <h3> Hello World</h3>   
+                <h3> Hello World</h3>
             </header>
             <!--section 1-->
-            <p> To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
+            <p> To get started with writing JavaScript, open the Scratchpad and write your first "Hello world"
+                JavaScript code:</p>
             <code>
                 function helloworld()
                 {
@@ -64,31 +71,65 @@
                     const a =1;
             </code>
         </section>
+        
         <section class="main-section" id="sec2">
             <header class="main-section" id="history">
                 <h3>Variables</h3>
-            </header><!--section 2-->
+            </header>
+            <!--section 2-->
             <p> : to declare a variable in javascript we use var</p>
             <code>
                 var a="this is a variable";
             </code>
         </section>
 
-        <section class="main-section" id="sec3">
-           <header class="main-section" id="datatype">
-               <h3>Data Types</h3>
-           </header><!--section 3-->
-           <p>bellow are sameple of data type</p>
-           <ul>
-            <li>number</li>
-            <li>string</li>
-            <li>bolean</li>
-        
-        </ul>
-        </section>
-        
-      
 
-    </div>
+        <section class="main-section" id="sec3">
+            <header class="main-section" id="datatype">
+                <h3>Data Types</h3>
+            </header>
+            <!--section 3-->
+            <p>bellow are sameple of data type</p>
+            <ul>
+                <li>number</li>
+                <li>string</li>
+                <li>bolean</li>
+
+            </ul>
+        </section>
+
+
+        <section class="main-section" id="sec4">
+            <header class="main-section" id="Constants">
+                <h3>Constants</h3>
+            </header>
+            <!--section 4-->
+            <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is
+                the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can
+                contain alphabetic, numeric, or underscore characters.</p>
+            <code>const PI = 3.14;
+        </code>
+            <p>A constant cannot change value through assignment or be re-declared while the script is running. It has
+                to be initialized to a value.
+
+                The scope rules for constants are the same as those for let block scope variables. If the const keyword
+                is omitted, the identifier is assumed to represent a variable.
+            </p>
+        </section>
+
+        <section class="main-section" id="sec5">
+            <header class="main-section" id="if...else_statement">
+                <h3>Data if...else statement</h3>
+            </header>
+            <!--section 5-->
+            <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause
+                to execute a statement if the condition is false. An if statement looks as follows:</p>
+     <code>if (condition) { statement_1; } else { statement_2; }</code>
+
+        </section>
+
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>
