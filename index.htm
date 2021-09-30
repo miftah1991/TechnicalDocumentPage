@@ -5,19 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technical Document Page</title>
+
+    <style type="text/css">
+        #navbar{
+            position: fixed;
+            min-width: 290px;
+            top: 0px;
+            left: 0px;
+            width: 300px;
+            height: 100%;
+            border-right: solid;
+            border-color:black;
+            
+        }
+        #main-doc 
+        {
+        position: absolute;
+        margin-left: 310px;
+        padding: 20px;
+        }
+        #ul{
+            list-style: none;
+        }
+    </style>
+    <script type="text/javascript">
+
+    </script>
 </head>
 <body>
+    <nav id="navbar">
+        <header>Technal Document Page</header>
+        <ul>
+            <li><a class="nav-link" href="#sec1">Hello World</a></li>
+            <li> <a class="nav-link" href="#sec2">Variables</a></li>
+            <li> <a class="nav-link" href="#sec3">Data Types</a></li>
+        </ul>
+        
+       
+        <a class="nav-link">Codes</a>
+        <a class="nav-link">Contact us</a>
+    </nav>
     <div id="main-doc">
-        <nav id="navbar">
-            <header>Technal Document Page</header>
-            <a class="nav-link">Home</a>
-            <a class="nav-link">About</a>
-            <a class="nav-link">Codes</a>
-            <a class="nav-link">Contact us</a>
-        </nav>
-        <section class="main-section">
-            <header class="main-section" id="origin">Java Script and Java</header>
-            
+        
+        <section class="main-section" id="sec1">
+            <header class="main-section" id="helloworld">
+            <h3> Hello World</h3>   
+            </header>
             <!--section 1-->
             <p> To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:</p>
             <code>
@@ -26,32 +59,34 @@
                     alert('Hello wordl');
                 }
             </code>
-            <p> Variables: to declare a variable in javascript we use var</p>
-            <code>
-                var a="this is a variable";
-            </code>
             <p>constanat Variables</p>
             <code>
                     const a =1;
             </code>
-            <h3 class="header">Data Types</h3>
-            <ul>
-                <li>number</li>
-                <li>string</li>
-                <li>bolean</li>
-            
-            </ul>
+        </section>
+        <section class="main-section" id="sec2">
+            <header class="main-section" id="history">
+                <h3>Variables</h3>
+            </header><!--section 2-->
+            <p> : to declare a variable in javascript we use var</p>
+            <code>
+                var a="this is a variable";
+            </code>
+        </section>
 
+        <section class="main-section" id="sec3">
+           <header class="main-section" id="datatype">
+               <h3>Data Types</h3>
+           </header><!--section 3-->
+           <p>bellow are sameple of data type</p>
+           <ul>
+            <li>number</li>
+            <li>string</li>
+            <li>bolean</li>
+        
+        </ul>
         </section>
-        <section class="main-section">
-            <header class="main-section" id="history">history</header><!--section 2-->
-        </section>
-        <section class="main-section">
-           <header class="main-section" id="Family">Family</header><!--section 3-->
-        </section>
-        <section class="main-section">
-           <header class="main-section" id="whatever">whatever</header><!--section 4-->
-        </section>
+        
       
 
     </div>
